@@ -1,0 +1,101 @@
+/* General Styles */
+body {
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-y: auto;
+  }
+  
+  .app-container {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Create Todo Form */
+  .create-todo {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .create-todo input {
+    width: 45%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border 0.2s;
+  }
+  
+  .create-todo input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .create-todo button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .create-todo button:hover {
+    background-color: #218838;
+  }
+  
+  /* Todos Container */
+  .todos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .todo-item {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .todo-item h2 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .todo-item h3 {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .todo-item button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+  }
+  
+  .todo-item button:hover {
+    background-color: #0056b3;
+  }
+  
+  .todo-item button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+  }
+  
